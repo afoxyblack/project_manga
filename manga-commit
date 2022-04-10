@@ -1,10 +1,10 @@
 #!/bin/bash
-zip=/usr/bin/zip
+zip=/data/data/com.termux/files/usr/bin/zip
 source=$(pwd)
 echo "manga-commit ver0.2"
 if [ -e zip ]
 then
-echo "Please, install zip package"
+echo "Installation zip package..."
 else
 echo " All dependences installed"
 fi

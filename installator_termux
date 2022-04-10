@@ -1,4 +1,11 @@
 #!/bin/bash
 echo "manga-commit installer on termux"
+echo "Apps installation..."
 cp manga-commit /data/data/com.termux/files/usr/bin
-echo "installation completed"
+cp manga /data/data/com.termux/files/usr/bin
+pkg install zip
+pkg install file
+echo "installation completed."
+echo "Setting up storage..."
+termux-setup-storage
+echo "Everything done."
