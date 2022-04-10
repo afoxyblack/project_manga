@@ -1,0 +1,4 @@
+#!/bin/bash
+echo "manga-commit installer on termux"
+cp manga-commit /data/data/com.termux/files/usr/bin
+echo "installation completed"

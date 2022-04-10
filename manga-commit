@@ -1,0 +1,29 @@
+#!/bin/bash
+zip=/usr/bin/zip
+source=$(pwd)
+echo "manga-commit ver0.2"
+if [ -e zip ]
+then
+echo "Please, install zip package"
+else
+echo " All dependences installed"
+fi
+echo "Enter manga name:"
+read name
+echo "Starting compressing manga commit"
+rm -rf Pics/
+rm -rf ch_adreses.txt
+rm -rf Г*
+rm -rf О*
+echo $source
+zip $name . -9 -r
+echo "Compressing complete!"
+echo "Move this to downloads? yes - y; no -n"
+yes="y"
+read answ1
+if [ $answ1 = $yes ]
+then
+mv -f $name.zip ~/storage/downloads/
+else 
+exit
+fi
